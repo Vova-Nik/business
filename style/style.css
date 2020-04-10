@@ -1,0 +1,270 @@
+@font-face {
+  font-family: "Gotham Black";
+  src: url("../fonts/gotham/Gotham_Black_Regular.ttf");
+}
+/******************* open sans **************************/
+@font-face {
+  font-family: "Open Sans Light";
+  src: url("../fonts/open_sans/OpenSans-Light.ttf");
+}
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url("../fonts/open_sans/OpenSans-Regular.ttf");
+}
+.success {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  border-color: green;
+}
+
+/*********************************************/
+body {
+  box-sizing: border-box;
+}
+
+.main-container {
+  width: 100%;
+}
+
+.logo {
+  width: 1170px;
+  margin: 0 auto;
+}
+.logo .logo-container {
+  float: left;
+  width: 52px;
+  height: 52px;
+  margin-top: 20px;
+  margin-left: 4px;
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.logo .nav {
+  float: right;
+  font-size: 0;
+  margin-top: 30px;
+}
+.logo .nav .ref {
+  color: #868686;
+}
+.logo .nav .menu {
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 36px;
+  vertical-align: top;
+  padding: 0 18px;
+}
+.logo .nav .ref:last-child .menu {
+  padding-right: 10px;
+}
+.logo .nav .menu:hover {
+  background-color: #ffbb42;
+  color: white;
+}
+
+.banner {
+  font-size: 0;
+}
+.banner .banner-uppart {
+  width: 100%;
+  background-color: #709dca;
+}
+.banner .container {
+  width: 1170px;
+  margin: 20px auto 0 auto;
+  padding-top: 102px;
+  color: #fff;
+}
+.banner .h1 {
+  font-size: 34px;
+  text-transform: uppercase;
+  font-family: "Gotham Black", sans-serif;
+  text-align: center;
+}
+.banner .text {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "OpenSans Reguler", sans-serif;
+  text-align: center;
+}
+.banner .form {
+  width: 1084px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 34px;
+  padding-bottom: 346px;
+}
+.banner .form .input {
+  width: 100%;
+  line-height: 40px;
+  margin-right: 8px;
+  padding-left: 44px;
+  font-family: "OpenSans Reguler", sans-serif;
+  font-size: 13px;
+}
+.banner .form .input-group {
+  width: 283px;
+  position: relative;
+}
+.banner .form .input-group-addon {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  color: #585858;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 0;
+}
+.banner .form .input-group:hover .input-group-addon {
+  color: #ffbb42;
+}
+.banner .form .submit {
+  width: 200px;
+  margin-right: 0;
+  padding-left: 1px;
+  line-height: 32px;
+  height: 45px;
+  background-color: #ffbb42;
+  border: transparent;
+  color: white;
+  text-transform: uppercase;
+}
+.banner .banner-downpart {
+  background-color: tomato;
+  width: 650px;
+  height: 100px;
+  margin: 0 auto;
+  position: relative;
+}
+.banner .banner-downpart .laptop {
+  position: absolute;
+  top: -282px;
+}
+.banner .banner-downpart .indicators {
+  font-size: 32px;
+  width: 100%;
+  text-align: center;
+  padding-top: 78px;
+  display: flex;
+  justify-content: center;
+}
+.banner .banner-downpart .indicators .indicator {
+  padding: 6px;
+  margin: 5px;
+  border-radius: 50%;
+  border: 1px solid blue;
+}
+.banner .banner-downpart .indicators .indicator:hover {
+  background-color: #ffbb42;
+}
+
+.services .container {
+  width: 1170px;
+  background-color: chartreuse;
+  margin: 100px auto 0 auto;
+}
+.services .container .h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #394b50;
+  text-transform: uppercase;
+  font-family: "Gotham Black", sans-serif;
+}
+.services .container .text {
+  font-size: 16px;
+  font-family: "Open Sans";
+  color: #394b50;
+  line-height: 1.375;
+  text-align: center;
+}
+
+/***************************************************************/
+/*
+.download {
+    display: none;
+}
+
+.aw-big {
+    font-size: 32px;
+    line-height: 1.6;
+}
+
+.fa-txt {
+    font-size: 20px;
+    margin-left: 28px;
+}
+
+.tower {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: center;
+    justify-content: flex-end;
+
+    flex-direction: column;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+
+    align-items: flex-end;
+    align-items: center;
+
+    align-self: center;
+    align-self: flex-end;
+    order: 2;
+}
+
+nav - Lato Regular
+Gotham Black
+OpenSans
+
+.footer {
+
+    #before {
+        padding: .6em 2.6em .6em .3em;
+        vertical-align: middle;
+    }
+
+    #before[required]+label {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    #before[required]+label:before {
+        content: "\2709";
+        position: absolute;
+        left: -1.2em;
+        font-size: 23px;
+        color: rgb(238, 238, 238);
+    }
+
+      #before[required]:hover + label:before, #before[required]:focus + label:before {
+        color: rgb(220, 200, 200);
+      }
+      #before[required]:not(:focus):not(:hover):valid {
+        opacity: .4;
+      }
+      #before[required]:not(:focus):valid + label:before {
+        content: "\2714";
+        color: green;
+      }
+
+    .awe {
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+    }
+}
+*/
+
+/*# sourceMappingURL=style.css.map */
