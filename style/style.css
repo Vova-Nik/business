@@ -81,6 +81,8 @@ body {
   margin: 20px auto 0 auto;
   padding-top: 102px;
   color: #fff;
+  padding-bottom: 345px;
+  position: relative;
 }
 .banner .h1 {
   font-size: 34px;
@@ -100,18 +102,18 @@ body {
   display: flex;
   justify-content: space-between;
   padding-top: 34px;
-  padding-bottom: 346px;
 }
 .banner .form .input {
   width: 100%;
   line-height: 40px;
-  margin-right: 8px;
+  margin-right: 5px;
   padding-left: 44px;
   font-family: "OpenSans Reguler", sans-serif;
   font-size: 13px;
+  border-color: transparent;
 }
 .banner .form .input-group {
-  width: 283px;
+  width: 280px;
   position: relative;
 }
 .banner .form .input-group-addon {
@@ -127,6 +129,12 @@ body {
 .banner .form .input-group:hover .input-group-addon {
   color: #ffbb42;
 }
+.banner .form .input:focus + .input-group-addon {
+  color: #ffbb42;
+}
+.banner .form .input:focus:not(.submit) {
+  box-shadow: 0px 0px 0px 3px rgba(9, 3, 255, 0.53);
+}
 .banner .form .submit {
   width: 200px;
   margin-right: 0;
@@ -138,22 +146,38 @@ body {
   color: white;
   text-transform: uppercase;
 }
+.banner .laptop-container {
+  width: 647px;
+  height: 350px;
+  margin: 0 auto;
+  position: absolute;
+  top: 310px;
+  left: 265px;
+  background-image: url("../images/laptop.png");
+  background-repeat: no-repeat;
+}
+.banner .laptop-container .laptop {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  width: 448px;
+  height: 265px;
+  background-image: url("../images/laptop_screen0.png");
+  background-repeat: no-repeat;
+  background-position: 25% 75%;
+  background-size: cover;
+  transition: 500ms;
+}
 .banner .banner-downpart {
-  background-color: tomato;
   width: 650px;
   height: 100px;
   margin: 0 auto;
-  position: relative;
-}
-.banner .banner-downpart .laptop {
-  position: absolute;
-  top: -282px;
 }
 .banner .banner-downpart .indicators {
   font-size: 32px;
   width: 100%;
   text-align: center;
-  padding-top: 78px;
+  padding-top: 80px;
   display: flex;
   justify-content: center;
 }
@@ -161,10 +185,10 @@ body {
   padding: 6px;
   margin: 5px;
   border-radius: 50%;
-  border: 1px solid blue;
+  border: 1px solid #8181da;
 }
-.banner .banner-downpart .indicators .indicator:hover {
-  background-color: #ffbb42;
+.banner .banner-downpart .indicators .active {
+  border: 2px solid blue;
 }
 
 .services .container {
