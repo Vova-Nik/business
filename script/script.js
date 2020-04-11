@@ -18,6 +18,8 @@ business = {
         this.screen = document.querySelector(".laptop ");
         this.indicators = document.querySelector(".indicators ");
         this.num_of_img = this.images.length;
+        if(this.num_of_img>12)
+            this.num_of_img=12;
         this.indicators.innerHTML = '';
         for(i=0; i<this.num_of_img; i++)
         {
@@ -39,7 +41,8 @@ business = {
     }
 }
 
-setInterval(function () { business.show(); }, 4000);
+
 document.addEventListener('DOMContentLoaded', function () {
+    setInterval(function () { business.show(); }, 4000);
     business.constructor();
 });

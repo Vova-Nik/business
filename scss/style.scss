@@ -12,6 +12,7 @@ sans-serif;
 
 $color_hover: #ffbb42;
 $color_text: #868686;
+$color_service_icons: #709dca;
 
 $width_1170: 1170px;
 
@@ -31,7 +32,7 @@ $width_1170: 1170px;
 /*********************************************/
 body {
     box-sizing: border-box;
-    //font-family: $font_lato;
+    font-family: $font_lato;
 }
 
 .main-container {
@@ -164,7 +165,7 @@ body {
         }
 
         .submit {
-            width: 200px;
+            width: 212px;
             margin-right: 0;
             padding-left: 1px;
             line-height: 32px;
@@ -182,7 +183,7 @@ body {
         margin: 0 auto;
         position: absolute;
         top: 310px;
-        left: 265px;
+        left: 260px;
         background-image: url('../images/laptop.png');
         background-repeat: no-repeat;
 
@@ -201,15 +202,11 @@ body {
     }
 
     .banner-downpart {
-        // background-color: tomato;
         width: 650px;
         height: 100px;
         margin: 0 auto;
 
         .indicators {
-            font-size: 32px;
-            width: 100%;
-            text-align: center;
             padding-top: 80px;
             display: flex;
             justify-content: center;
@@ -232,7 +229,6 @@ body {
 .services {
     .container {
         width: $width_1170;
-        background-color: chartreuse;
         margin: 100px auto 0 auto;
 
         .h2 {
@@ -251,10 +247,148 @@ body {
             text-align: center;
         }
 
+        .cards-container {
+            margin-top: 84px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .servicesCard {
+            width: 554px;
+            display: flex;
+            margin-bottom: 70px;
+
+            .servicesCard__icon {
+                width: 82px;
+                padding-top: 4px;
+                font-size: 42px;
+                color: $color_service_icons;
+            }
+
+            .servicesCard__icon:hover {
+                color: $color_hover;
+            }
+
+            .servicesCard__content {
+                width: 472px;
+                padding-right: 10px;
+
+                .h3 {
+                    font-size: 15px;
+                    font-family: $font_lato;
+                    color: rgb(57, 75, 80);
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+
+                .text {
+                    padding: 8px 0 0 0;
+                    margin-top: 8px;
+                    font-size: 12.8px;
+                    font-family: $font_opensans_400;
+                    color: rgb(123, 123, 123);
+                    line-height: 1.7;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+.aboutUs {
+    width: 100%;
+    margin-top: 84px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .aboutUs__left {
+        width: 50%;
+        background-image: url('');
+        background-image: url('../images/about_us.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .aboutUs__right {
+        width: 50%;
+
+        background-color: $color_hover;
+        // border: 1px solid green;
+    }
+
+    .article {
+        width: 585px;
+        padding-top: 155px;
+        padding-left: 80px;
+        padding-bottom: 175px;
+        ;
+
+        .h2 {
+            font-size: 30px;
+            font-family: $font_gotam;
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            line-height: 40px;
+            text-align: left;
+        }
+
+        .text {
+            font-size: 13.5px;
+            font-family: $font_opensans_400;
+            color: rgb(255, 255, 255);
+            line-height: 1.9;
+            padding-top: 14px;
+        }
+
+        .button {
+            width: 145px;
+            margin-top: 24px;
+            line-height: 45px;
+            background-color: $color_hover;
+            border: 1px solid #e7ad48;
+            font-size: 15px;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.prices {
+    .h2 {
+        font-size: 30px;
+        text-align: center;
+        color: rgb(57, 75, 80);
+        text-transform: uppercase;
+        font-family: $font_gotam;
+    }
+
+    .container {
+        width: 1170px;
+        margin: 0 auto;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .prices__cardsContainer {
+        display: flex;
+        flex-wrap: wrap;
+
+        .prices__card{
+            width: 390px;
+            border: solid 1px green;
+        }
     }
 }
 
 
+.footer {
+    height: 256px;
+}
 
 /***************************************************************/
 /*

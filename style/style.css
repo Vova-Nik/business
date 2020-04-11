@@ -24,6 +24,7 @@
 /*********************************************/
 body {
   box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
 
 .main-container {
@@ -136,7 +137,7 @@ body {
   box-shadow: 0px 0px 0px 3px rgba(9, 3, 255, 0.53);
 }
 .banner .form .submit {
-  width: 200px;
+  width: 212px;
   margin-right: 0;
   padding-left: 1px;
   line-height: 32px;
@@ -152,7 +153,7 @@ body {
   margin: 0 auto;
   position: absolute;
   top: 310px;
-  left: 265px;
+  left: 260px;
   background-image: url("../images/laptop.png");
   background-repeat: no-repeat;
 }
@@ -174,9 +175,6 @@ body {
   margin: 0 auto;
 }
 .banner .banner-downpart .indicators {
-  font-size: 32px;
-  width: 100%;
-  text-align: center;
   padding-top: 80px;
   display: flex;
   justify-content: center;
@@ -193,7 +191,6 @@ body {
 
 .services .container {
   width: 1170px;
-  background-color: chartreuse;
   margin: 100px auto 0 auto;
 }
 .services .container .h2 {
@@ -209,6 +206,124 @@ body {
   color: #394b50;
   line-height: 1.375;
   text-align: center;
+}
+.services .container .cards-container {
+  margin-top: 84px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.services .container .servicesCard {
+  width: 554px;
+  display: flex;
+  margin-bottom: 70px;
+}
+.services .container .servicesCard .servicesCard__icon {
+  width: 82px;
+  padding-top: 4px;
+  font-size: 42px;
+  color: #709dca;
+}
+.services .container .servicesCard .servicesCard__icon:hover {
+  color: #ffbb42;
+}
+.services .container .servicesCard .servicesCard__content {
+  width: 472px;
+  padding-right: 10px;
+}
+.services .container .servicesCard .servicesCard__content .h3 {
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  color: #394b50;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.services .container .servicesCard .servicesCard__content .text {
+  padding: 8px 0 0 0;
+  margin-top: 8px;
+  font-size: 12.8px;
+  font-family: "OpenSans Reguler", sans-serif;
+  color: #7b7b7b;
+  line-height: 1.7;
+  text-align: left;
+}
+
+.aboutUs {
+  width: 100%;
+  margin-top: 84px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.aboutUs .aboutUs__left {
+  width: 50%;
+  background-image: url("");
+  background-image: url("../images/about_us.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.aboutUs .aboutUs__right {
+  width: 50%;
+  background-color: #ffbb42;
+}
+.aboutUs .article {
+  width: 585px;
+  padding-top: 155px;
+  padding-left: 80px;
+  padding-bottom: 175px;
+}
+.aboutUs .article .h2 {
+  font-size: 30px;
+  font-family: "Gotham Black", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  line-height: 40px;
+  text-align: left;
+}
+.aboutUs .article .text {
+  font-size: 13.5px;
+  font-family: "OpenSans Reguler", sans-serif;
+  color: white;
+  line-height: 1.9;
+  padding-top: 14px;
+}
+.aboutUs .article .button {
+  width: 145px;
+  margin-top: 24px;
+  line-height: 45px;
+  background-color: #ffbb42;
+  border: 1px solid #e7ad48;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.prices .h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #394b50;
+  text-transform: uppercase;
+  font-family: "Gotham Black", sans-serif;
+}
+.prices .container {
+  width: 1170px;
+  margin: 0 auto;
+}
+.prices .text {
+  text-align: center;
+}
+.prices .prices__cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.prices .prices__cardsContainer .prices__card {
+  width: 390px;
+  border: solid 1px green;
+}
+
+.footer {
+  height: 256px;
 }
 
 /***************************************************************/
