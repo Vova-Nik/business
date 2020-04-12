@@ -12,13 +12,7 @@
   src: url("../fonts/open_sans/OpenSans-Regular.ttf");
 }
 .success {
-  border: 1px solid #ccc;
-  padding: 10px;
-  color: #333;
-}
-
-.success {
-  border-color: green;
+  border: 1px dashed green;
 }
 
 /*********************************************/
@@ -109,6 +103,7 @@ body {
   line-height: 40px;
   margin-right: 5px;
   padding-left: 44px;
+  border-radius: 3px;
   font-family: "OpenSans Reguler", sans-serif;
   font-size: 13px;
   border-color: transparent;
@@ -270,7 +265,7 @@ body {
   width: 585px;
   padding-top: 155px;
   padding-left: 80px;
-  padding-bottom: 175px;
+  padding-bottom: 170px;
 }
 .aboutUs .article .h2 {
   font-size: 30px;
@@ -299,12 +294,18 @@ body {
   text-transform: uppercase;
 }
 
+.prices {
+  background-color: #e7edf3;
+  padding: 128px 0 165px 0;
+  /***********************************************************/
+}
 .prices .h2 {
   font-size: 30px;
   text-align: center;
   color: #394b50;
   text-transform: uppercase;
   font-family: "Gotham Black", sans-serif;
+  line-height: 1.2;
 }
 .prices .container {
   width: 1170px;
@@ -312,18 +313,122 @@ body {
 }
 .prices .text {
   text-align: center;
+  font-size: 18px;
+  line-height: 1.2;
+  font-family: "Lato", sans-serif;
+  color: #394b50;
+  font-weight: 200;
 }
 .prices .prices__cardsContainer {
   display: flex;
   flex-wrap: wrap;
+  width: 1170px;
+  justify-content: space-around;
+  margin-top: 80px;
+  background-color: #fff;
 }
-.prices .prices__cardsContainer .prices__card {
+.prices .prices__cardsContainer .pricesCard_farme {
   width: 390px;
-  border: solid 1px green;
+  position: relative;
+}
+.prices .prices__cardsContainer .pricesCard:hover {
+  top: -30px;
+  left: -5px;
+  background-color: #709dca;
+  width: 400px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  z-index: 4;
+  position: absolute;
+  color: white;
+}
+.prices .prices__cardsContainer .pricesCard:hover .pricesCard__h2 {
+  color: white;
+}
+.prices .prices__cardsContainer .pricesCard:hover .pricesCard__price {
+  color: white;
+}
+.prices .prices__cardsContainer .pricesCard:hover .price_frame {
+  color: white;
+}
+.prices .prices__cardsContainer .pricesCard:hover .pricesCard__h3 {
+  color: white;
+}
+.prices .prices__cardsContainer .pricesCard {
+  width: 380px;
+  margin: 0 auto;
+  padding: 50px 10px;
+  background-color: transparent;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  /****************************************************************/
+}
+.prices .prices__cardsContainer .pricesCard .pricesCard__h2 {
+  text-align: center;
+  font-size: 25px;
+  color: #818b95;
+  line-height: 1.2;
+}
+.prices .prices__cardsContainer .pricesCard .price_frame {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  color: #ffbb42;
+}
+.prices .prices__cardsContainer .pricesCard .dollar {
+  display: inline-block;
+  font-size: 36px;
+}
+.prices .prices__cardsContainer .pricesCard .pricesCard__price {
+  display: inline-block;
+  font-size: 60px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+}
+.prices .prices__cardsContainer .pricesCard .pricesCard__h3:nth-child(4) {
+  margin-top: 34px;
+}
+.prices .prices__cardsContainer .pricesCard .pricesCard__period {
+  line-height: 1;
+  font-size: 13.5px;
+  color: #b5bbc1;
+  text-transform: uppercase;
+  text-align: center;
+}
+.prices .prices__cardsContainer .pricesCard .pricesCard__h3 {
+  border-top: 1px solid gray;
+  font-size: 13.5px;
+  color: #b5bbc1;
+  text-transform: uppercase;
+  line-height: 3;
+  text-align: center;
+}
+.prices .prices__cardsContainer .pricesCard .pricesCard__button {
+  width: 130px;
+  margin: 16px auto;
+  line-height: 45px;
+  background-color: #ffbb42;
+  border: 1px solid #e7ad48;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .footer {
+  margin: 100px 400px;
   height: 256px;
+}
+.footer .lato {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+}
+.footer .lato_bold {
+  font-family: lato;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 /***************************************************************/

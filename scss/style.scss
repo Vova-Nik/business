@@ -16,15 +16,13 @@ $color_service_icons: #709dca;
 
 $width_1170: 1170px;
 
-%message-shared {
-    border: 1px solid #ccc;
-    padding: 10px;
-    color: #333;
+%border_dashed {
+    border: 1px dashed green;
+
 }
 
 .success {
-    @extend %message-shared;
-    border-color: green;
+    @extend %border_dashed;
 }
 
 
@@ -131,6 +129,7 @@ body {
             line-height: 40px;
             margin-right: 5px;
             padding-left: 44px;
+            border-radius: 3px;
             font-family: $font_opensans_400;
             font-size: 13px;
             border-color: transparent;
@@ -313,17 +312,14 @@ body {
 
     .aboutUs__right {
         width: 50%;
-
         background-color: $color_hover;
-        // border: 1px solid green;
     }
 
     .article {
         width: 585px;
         padding-top: 155px;
         padding-left: 80px;
-        padding-bottom: 175px;
-        ;
+        padding-bottom: 170px;
 
         .h2 {
             font-size: 30px;
@@ -357,12 +353,17 @@ body {
 }
 
 .prices {
+
+    background-color: #e7edf3;
+    padding: 128px 0 165px 0;
+
     .h2 {
         font-size: 30px;
         text-align: center;
         color: rgb(57, 75, 80);
         text-transform: uppercase;
         font-family: $font_gotam;
+        line-height: 1.2;
     }
 
     .container {
@@ -372,22 +373,160 @@ body {
 
     .text {
         text-align: center;
-    }
+        font-size: 18px;
+        line-height: 1.2;
 
+  
+            font-family: $font_lato;
+            color: rgb(57, 75, 80);
+            font-weight: 200;
+         
+
+          }
+          
+
+    /***********************************************************/
     .prices__cardsContainer {
         display: flex;
         flex-wrap: wrap;
+        width: 1170px;
+        justify-content: space-around;
+        margin-top: 80px;
+        background-color: #fff;
 
-        .prices__card{
+
+        .pricesCard_farme {
             width: 390px;
-            border: solid 1px green;
+            position: relative;
         }
+
+        .pricesCard:hover {
+            top: -30px;
+            left: -5px; 
+            background-color: #709dca;
+            width: 400px;
+            padding-top: 80px;
+            padding-bottom: 80px;;
+            z-index: 4;
+            position: absolute;
+            color: white;
+        }
+
+        .pricesCard:hover .pricesCard__h2{
+            color: white;
+        }
+        .pricesCard:hover .pricesCard__price{
+            color: white;
+        }
+        .pricesCard:hover .price_frame{
+            color: white;
+        }
+
+        .pricesCard:hover .pricesCard__h3{
+            color: white;
+        }
+
+        .pricesCard {
+            width: 380px;
+            margin: 0 auto;
+            padding: 50px 10px;
+            background-color: transparent;
+            font-family: $font_lato;
+            text-transform: uppercase;
+           // transition: .6s;
+
+            /****************************************************************/
+            .pricesCard__h2 {
+                text-align: center;
+                font-size: 25px;
+                color: rgb(129, 139, 149);
+                line-height: 1.2;
+            }
+
+            .price_frame{
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+                color: rgb(255, 187, 66);
+                //@extend %border_dashed;
+            }
+
+            .dollar{
+                display: inline-block;
+                font-size: 36px;
+
+            }
+
+            .pricesCard__price {
+                display: inline-block;
+                font-size: 60px;
+
+                font-weight: bold;
+                text-transform: uppercase;
+                line-height: 1;
+                text-align: center;
+            }
+
+            .pricesCard__h3:nth-child(4){
+                margin-top: 34px;
+               // background-color: lightseagreen;
+            }
+
+ 
+            .pricesCard__period {
+                line-height: 1;
+                font-size: 13.5px;
+                color: rgb(181, 187, 193);
+                text-transform: uppercase;
+                text-align: center;
+            }
+
+            .pricesCard__h3 {
+                border-top: 1px solid gray;
+                font-size: 13.5px;
+                color: rgb(181, 187, 193);
+
+                text-transform: uppercase;
+                line-height: 3;
+                text-align: center;
+
+            }
+
+            .pricesCard__button {
+                width: 130px;
+                margin: 16px auto;
+                line-height: 45px;
+                background-color: $color_hover;
+                border: 1px solid #e7ad48;
+                font-size: 15px;
+                color: white;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+
+        }
+
+
     }
 }
 
 
 .footer {
+    margin: 100px 400px;
     height: 256px;
+
+    .lato {
+        font-family: $font_lato;
+        font-size: 18px;
+    }
+
+    .lato_bold {
+        font-family: lato;
+        //font-weight: 800;
+        font-weight: bold;
+        font-size: 18px;
+    }
 }
 
 /***************************************************************/
