@@ -1,3 +1,120 @@
-.howItWorks{
-    background-color: tomato;
+$font_lato: 'Lato',
+sans-serif;
+$font_gotam: 'Gotham Black',
+sans-serif;
+$font_opensans_200: 'OpenSans Light',
+sans-serif;
+$font_opensans_400: 'OpenSans Reguler',
+sans-serif;
+$font_mariad: 'Myriad Pro',
+sans-serif;
+
+$color_hover: #ffbb42;
+$color_text: #868686;
+$color_service_icons: #709dca;
+
+$width_1170: 1170px;
+
+
+%border_dashed {
+    border: 1px dashed green;
 }
+
+
+.howItWorks_container {
+    width: $width_1170;
+    margin: 153px auto 0 auto;
+
+    .h2 {
+        font-size: 30px;
+        text-align: center;
+        color: #394b50;
+        text-transform: uppercase;
+        font-family: $font_gotam;
+        line-height: 1.2;
+    }
+
+    .text {
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.2;
+        font-family: $font_lato;
+        color: rgb(57, 75, 80);
+        font-weight: 200;
+    }
+
+    .arrows_container {
+        margin-top: 70px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+
+        .arrow {
+            width: 130px;
+            height: 32px;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            &:nth-child(1),
+            &:nth-child(3) {
+                background-image: url('../images/arrow_1.png');
+            }
+
+            &:nth-child(2) {
+                background-image: url('../images/arrow_2.png');
+                position: absolute;
+                top: 95px;
+            }
+        }
+
+    }
+
+    .cards_container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card {
+        width: 23%;
+        .icon {
+            font-size: 70px;
+            text-align: center;
+            color: $color_service_icons;
+            line-height: 1;
+        }
+        .h3 {
+            margin-top: 88px;
+            font-family: $font_lato;
+            font-weight: 800;
+            font-size: 20px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .text{
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 13px;
+            font-family: $font_opensans_400;
+            line-height: 1.8;
+        }
+    }
+
+
+    .button {
+        width: 165px;
+        // margin-top: 24px;
+        margin: 76px auto 150px auto;
+        line-height: 45px;
+        background-color: $color_hover;
+        border: 1px solid #e7ad48;
+        font-size: 15px;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+
+//background-image: url('../images/about_us.png')

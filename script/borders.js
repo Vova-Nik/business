@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     bBtn.innerHTML = "Get Borders";
     document.body.appendChild(bBtn);
     console.log("Created", bBtn)
-    bBtn.style.backgroundColor = "red";
+    bBtn.style.backgroundColor = "tomato";
     bBtn.style.width = "160px";
     bBtn.style.height = "32px"
     bBtn.style.padding = "0 12px";

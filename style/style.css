@@ -15,6 +15,91 @@
   border: 1px dashed green;
 }
 
+.howItWorks_container {
+  width: 1170px;
+  margin: 153px auto 0 auto;
+}
+.howItWorks_container .h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #394b50;
+  text-transform: uppercase;
+  font-family: "Gotham Black", sans-serif;
+  line-height: 1.2;
+}
+.howItWorks_container .text {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.2;
+  font-family: "Lato", sans-serif;
+  color: #394b50;
+  font-weight: 200;
+}
+.howItWorks_container .arrows_container {
+  margin-top: 70px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+.howItWorks_container .arrows_container .arrow {
+  width: 130px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.howItWorks_container .arrows_container .arrow:nth-child(1), .howItWorks_container .arrows_container .arrow:nth-child(3) {
+  background-image: url("../images/arrow_1.png");
+}
+.howItWorks_container .arrows_container .arrow:nth-child(2) {
+  background-image: url("../images/arrow_2.png");
+  position: absolute;
+  top: 95px;
+}
+.howItWorks_container .cards_container {
+  display: flex;
+  justify-content: space-between;
+}
+.howItWorks_container .card {
+  width: 23%;
+}
+.howItWorks_container .card .icon {
+  font-size: 70px;
+  text-align: center;
+  color: #709dca;
+  line-height: 1;
+}
+.howItWorks_container .card .h3 {
+  margin-top: 88px;
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.howItWorks_container .card .text {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-family: "OpenSans Reguler", sans-serif;
+  line-height: 1.8;
+}
+.howItWorks_container .button {
+  width: 165px;
+  margin: 76px auto 150px auto;
+  line-height: 45px;
+  background-color: #ffbb42;
+  border: 1px solid #e7ad48;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.success {
+  border: 1px dashed green;
+}
+
 /*********************************************/
 body {
   box-sizing: border-box;
@@ -166,7 +251,7 @@ body {
 }
 .banner .banner-downpart {
   width: 650px;
-  height: 100px;
+  height: 110px;
   margin: 0 auto;
 }
 .banner .banner-downpart .indicators {
@@ -186,7 +271,7 @@ body {
 
 .services .container {
   width: 1170px;
-  margin: 100px auto 0 auto;
+  margin: 90px auto 0 auto;
 }
 .services .container .h2 {
   font-size: 30px;
@@ -296,8 +381,7 @@ body {
 
 .prices {
   background-color: #e7edf3;
-  padding: 128px 0 165px 0;
-  /***********************************************************/
+  padding: 128px 0 188px 0;
 }
 .prices .h2 {
   font-size: 30px;
@@ -323,6 +407,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 1170px;
+  border: 3px;
   justify-content: space-around;
   margin-top: 80px;
   background-color: #fff;
@@ -330,6 +415,7 @@ body {
 .prices .prices__cardsContainer .pricesCard_farme {
   width: 390px;
   position: relative;
+  border-radius: 10px;
 }
 .prices .prices__cardsContainer .pricesCard:hover {
   top: -30px;
@@ -337,7 +423,7 @@ body {
   background-color: #709dca;
   width: 400px;
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 68px;
   z-index: 4;
   position: absolute;
   color: white;
@@ -354,14 +440,17 @@ body {
 .prices .prices__cardsContainer .pricesCard:hover .pricesCard__h3 {
   color: white;
 }
+.prices .prices__cardsContainer .pricesCard:hover .pricesCard__period {
+  color: white;
+}
 .prices .prices__cardsContainer .pricesCard {
   width: 380px;
   margin: 0 auto;
-  padding: 50px 10px;
+  padding: 50px 24px 36px 24px;
+  border-radius: 3px;
   background-color: transparent;
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
-  /****************************************************************/
 }
 .prices .prices__cardsContainer .pricesCard .pricesCard__h2 {
   text-align: center;
@@ -398,7 +487,7 @@ body {
   text-align: center;
 }
 .prices .prices__cardsContainer .pricesCard .pricesCard__h3 {
-  border-top: 1px solid gray;
+  border-top: 1px solid #e2e9f0;
   font-size: 13.5px;
   color: #b5bbc1;
   text-transform: uppercase;
@@ -408,7 +497,7 @@ body {
 .prices .prices__cardsContainer .pricesCard .pricesCard__button {
   width: 130px;
   margin: 16px auto;
-  line-height: 45px;
+  line-height: 38px;
   background-color: #ffbb42;
   border: 1px solid #e7ad48;
   font-size: 15px;
@@ -418,7 +507,7 @@ body {
 }
 
 .footer {
-  margin: 100px 400px;
+  margin: 200px 400px;
   height: 256px;
 }
 .footer .lato {

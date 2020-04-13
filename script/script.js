@@ -14,7 +14,6 @@ business = {
     indicator: [],
 
     constructor() {
-        console.log("in script");
         this.screen = document.querySelector(".laptop ");
         this.indicators = document.querySelector(".indicators ");
         this.num_of_img = this.images.length;
