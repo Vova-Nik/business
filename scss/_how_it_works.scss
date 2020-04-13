@@ -12,18 +12,16 @@ sans-serif;
 $color_hover: #ffbb42;
 $color_text: #868686;
 $color_service_icons: #709dca;
+$color_orange_bg: #ffc155;
 
 $width_1170: 1170px;
 
-
-%border_dashed {
-    border: 1px dashed green;
-}
 
 
 .howItWorks_container {
     width: $width_1170;
     margin: 153px auto 0 auto;
+    padding-bottom: 148px;
 
     .h2 {
         font-size: 30px;
@@ -104,8 +102,7 @@ $width_1170: 1170px;
 
     .button {
         width: 165px;
-        // margin-top: 24px;
-        margin: 76px auto 150px auto;
+        margin: 76px auto 0 auto;
         line-height: 45px;
         background-color: $color_hover;
         border: 1px solid #e7ad48;
@@ -117,4 +114,3 @@ $width_1170: 1170px;
 }
 
 
-//background-image: url('../images/about_us.png')

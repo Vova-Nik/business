@@ -1,6 +1,6 @@
-
  @use 'fonts';
  @use 'how_it_works';
+ @use 'happy_clients';
 
 
  $font_lato: 'Lato',
@@ -15,6 +15,7 @@
  sans-serif;
 
  $color_hover: #ffbb42;
+ $color_orange_bg: #ffc155;
  $color_text: #868686;
  $color_service_icons: #709dca;
 
@@ -316,7 +317,7 @@
 
      .aboutUs__right {
          width: 50%;
-         background-color: $color_hover;
+         background-color: $color_orange_bg;
      }
 
      .article {
