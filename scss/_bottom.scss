@@ -1,0 +1,94 @@
+$font_lato: 'Lato',
+sans-serif;
+$font_gotam: 'Gotham Black',
+sans-serif;
+$font_opensans_200: 'OpenSans Light',
+sans-serif;
+$font_opensans_400: 'OpenSans Reguler',
+sans-serif;
+$font_mariad: 'Myriad Pro',
+sans-serif;
+
+$color_hover: #ffbb42;
+$color_text: #868686;
+$color_service_icons: #709dca;
+$color_orange_bg: #ffc155;
+$color_banner_footer: #709dca;
+$color_hor_line: #e2e9f0;
+
+$width_1170: 1170px;
+
+.bottom {
+    width: $width_1170;
+    margin: 40px auto 0 auto;
+    padding: 11px 60px 10px 60px;
+
+    .nav {
+        text-align: center;
+        font-size: 0;
+
+        .ref {
+            color: $color_text;
+        }
+
+        .menu {
+            display: inline-block;
+            text-transform: uppercase;
+            font-family: $font_lato;
+            font-size: 13px;
+            line-height: 36px;
+            vertical-align: top;
+            padding: 0 10px;
+            margin: 0 8px;
+        }
+
+        .ref:last-child .menu {
+            padding-right: 10px;
+        }
+
+        .menu:hover {
+            background-color: $color_hover;
+            color: white;
+        }
+    }
+    .phone{
+        padding: 10px 10px;
+        text-align: center;
+        font-family: $font_lato;
+        font-size: 22px;
+        color: $color_text;
+        &:before{
+            content: "\f879";
+            padding: 0 8px;
+            font-size: 18px;
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900; 
+        }
+    }
+    .social{
+        text-align: center;
+        padding: 10px 10px;
+        .symbol{
+            font-size: 18px;
+            padding: 0 6px;
+            color: $color_banner_footer;
+            &:hover{
+                color: $color_hover;
+            }
+        }
+    }
+
+}
+.footer{
+    background-color: $color_banner_footer;
+    margin: 30px 0px;
+    .container{
+        margin: 0 auto;
+        padding: 15px;
+        width: $width_1170;
+        font-family: $font_opensans_400;
+        color: white;
+        font-size: 13px;
+        text-align: center;
+    }
+}
