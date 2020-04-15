@@ -1,7 +1,7 @@
 
 business = {
     images: [
-        "url('./images/laptop_screen0.png')",
+        "url('./images/laptop_screen0.jpg')",
         "url('./images/laptop_screen1.jpg')",
         "url('./images/laptop_screen2.jpg')",
        // "url('https://f.kyivmaps.com/location/1673/tEJtg.jpg')",

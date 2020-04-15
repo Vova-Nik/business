@@ -3,28 +3,7 @@
  @use 'happy_clients';
  @use 'newsletter';
  @use 'bottom';
-
-
- $font_lato: 'Lato',
- sans-serif;
- $font_gotam: 'Gotham Black',
- sans-serif;
- $font_opensans_200: 'OpenSans Light',
- sans-serif;
- $font_opensans_400: 'OpenSans Reguler',
- sans-serif;
- $font_mariad: 'Myriad Pro',
- sans-serif;
-
- $color_hover: #ffbb42;
- $color_orange_bg: #ffc155;
- $color_text: #868686;
- $color_service_icons: #709dca;
- $color_banner_footer: #709dca;
- $color_hor_line: #e2e9f0;
- $color_white_hover: #c2e1ff;
-
- $width_1170: 1170px;
+ @import  'variables';
 
  body {
      box-sizing: border-box;
@@ -116,7 +95,6 @@
          display: flex;
          justify-content: space-between;
          padding-top: 34px;
-         //padding-bottom: 346px;
 
          .input {
              width: 100%;
@@ -154,7 +132,7 @@
          }
 
          .input:focus:not(.submit) {
-             box-shadow: 0px 0px 0px 3px rgba(9, 3, 255, 0.53);
+             box-shadow: 0px 0px 0px 2px rgba(9, 3, 200, 0.4);
          }
 
          .submit {
@@ -186,7 +164,7 @@
              left: 100px;
              width: 448px;
              height: 265px;
-             background-image: url('../images/laptop_screen0.png');
+             background-image: url('../images/laptop_screen0.jpg');
              background-repeat: no-repeat;
              background-position: 25% 75%;
              background-size: cover;
@@ -297,7 +275,7 @@
      .aboutUs__left {
          width: 50%;
          background-image: url('');
-         background-image: url('../images/about_us.png');
+         background-image: url('../images/about_us.jpg');
          background-position: center;
          background-repeat: no-repeat;
          background-size: cover;
@@ -400,7 +378,7 @@
              color: white;
 
              .pricesCard__h2 {
-                 color: white;
+                 color: $color_white_hover;
              }
 
              .pricesCard__price {
@@ -417,7 +395,7 @@
              }
 
              .pricesCard__period {
-                 color:white;
+                 color: $color_white_hover;
              }
          }
 

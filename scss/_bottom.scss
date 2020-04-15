@@ -1,26 +1,8 @@
-$font_lato: 'Lato',
-sans-serif;
-$font_gotam: 'Gotham Black',
-sans-serif;
-$font_opensans_200: 'OpenSans Light',
-sans-serif;
-$font_opensans_400: 'OpenSans Reguler',
-sans-serif;
-$font_mariad: 'Myriad Pro',
-sans-serif;
-
-$color_hover: #ffbb42;
-$color_text: #868686;
-$color_service_icons: #709dca;
-$color_orange_bg: #ffc155;
-$color_banner_footer: #709dca;
-$color_hor_line: #e2e9f0;
-
-$width_1170: 1170px;
+@import  'variables';
 
 .bottom {
     width: $width_1170;
-    margin: 40px auto 0 auto;
+    margin: 45px auto 0 auto;
     padding: 11px 60px 10px 60px;
 
     .nav {
