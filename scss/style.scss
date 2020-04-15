@@ -3,11 +3,15 @@
  @use 'happy_clients';
  @use 'newsletter';
  @use 'bottom';
- @import  'variables';
+ @use 'comon';
+ @import 'variables';
 
  body {
-     box-sizing: border-box;
      font-family: $font_lato;
+ }
+
+ * {
+     box-sizing: border-box;
  }
 
  .logo {
@@ -28,34 +32,37 @@
      .nav {
          float: right;
          font-size: 0;
-         margin-top: 30px;
+         margin-top: 32px;
 
          .ref {
+             display: inline-block;
+             padding: 0 15px;
+             vertical-align: top;
+             text-align: center;
+             font-size: 14px;
+             line-height: 36px;
+             font-family: $font_lato;
              color: $color_text;
+             text-transform: uppercase;
+
+             &:hover {
+                 background-color: $color_hover;
+                 color: white;
+             }
          }
 
          .menu {
              display: inline-block;
-             text-transform: uppercase;
-             font-family: $font_lato;
-             font-size: 14px;
-             line-height: 36px;
              vertical-align: top;
-             padding: 0 16px;
-             margin: 0 2px;
+             margin: 0 3px;
 
-         }
-
-         .ref:last-child .menu {
-             padding-right: 10px;
-         }
-
-         .menu:hover {
-             background-color: $color_hover;
-             color: white;
+             &:last-child {
+                 margin: 0;
+             }
          }
      }
  }
+
 
  .banner {
      font-size: 0;
@@ -132,7 +139,7 @@
          }
 
          .input:focus:not(.submit) {
-             box-shadow: 0px 0px 0px 2px rgba(9, 3, 200, 0.4);
+             box-shadow: 0px 0px 0px 1px rgba(9, 3, 200, 0.4);
          }
 
          .submit {
@@ -191,7 +198,7 @@
 
              .active {
                  border: 2px solid $color_banner_footer;
-            }
+             }
          }
      }
  }

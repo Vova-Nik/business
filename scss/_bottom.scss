@@ -4,35 +4,42 @@
     width: $width_1170;
     margin: 45px auto 0 auto;
     padding: 11px 60px 10px 60px;
+    font-size: 0;
+    text-align: center;
 
     .nav {
-        text-align: center;
-        font-size: 0;
+        display: inline-block;
+        margin: 32px 0;
 
         .ref {
+            display: inline-block;
+            padding: 0 15px;
+            vertical-align: top;
+            text-align: center;
+            font-size: 14px;
+            line-height: 36px;
+            font-family: $font_lato;
             color: $color_text;
+            text-transform: uppercase;
+
+            &:hover {
+                background-color: $color_hover;
+                color: white;
+            }
         }
 
         .menu {
             display: inline-block;
-            text-transform: uppercase;
-            font-family: $font_lato;
-            font-size: 13px;
+            margin: 0 3px;
             line-height: 36px;
             vertical-align: top;
-            padding: 0 10px;
-            margin: 0 8px;
-        }
 
-        .ref:last-child .menu {
-            padding-right: 10px;
-        }
-
-        .menu:hover {
-            background-color: $color_hover;
-            color: white;
+            &:last-child {
+                margin: 0;
+            }
         }
     }
+
     .phone{
         padding: 10px 10px;
         text-align: center;

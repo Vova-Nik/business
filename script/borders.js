@@ -20,3 +20,11 @@ document.addEventListener('DOMContentLoaded', function () {
     bBtn.style.borderRadius = "6px";
     bBtn.onclick = rend;
 });
+
+
+/*
+sass --watch scss/style.scss:style/style.css 
+-s, --style=<NAME>   Output style.   [expanded (default), compressed]
+[].forEach.call(document.querySelectorAll("*"),function(a){a.style.outline="1px solid #"+(~~(Math.random()*(1<<24))).toString(16)}) 
+
+*/

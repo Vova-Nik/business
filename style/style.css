@@ -338,30 +338,36 @@
   width: 1170px;
   margin: 45px auto 0 auto;
   padding: 11px 60px 10px 60px;
+  font-size: 0;
+  text-align: center;
 }
 .bottom .nav {
-  text-align: center;
-  font-size: 0;
+  display: inline-block;
+  margin: 32px 0;
 }
 .bottom .nav .ref {
+  display: inline-block;
+  padding: 0 15px;
+  vertical-align: top;
+  text-align: center;
+  font-size: 14px;
+  line-height: 36px;
+  font-family: "Lato", sans-serif;
   color: #868686;
+  text-transform: uppercase;
+}
+.bottom .nav .ref:hover {
+  background-color: #ffbb42;
+  color: white;
 }
 .bottom .nav .menu {
   display: inline-block;
-  text-transform: uppercase;
-  font-family: "Lato", sans-serif;
-  font-size: 13px;
+  margin: 0 3px;
   line-height: 36px;
   vertical-align: top;
-  padding: 0 10px;
-  margin: 0 8px;
 }
-.bottom .nav .ref:last-child .menu {
-  padding-right: 10px;
-}
-.bottom .nav .menu:hover {
-  background-color: #ffbb42;
-  color: white;
+.bottom .nav .menu:last-child {
+  margin: 0;
 }
 .bottom .phone {
   padding: 10px 10px;
@@ -404,9 +410,16 @@
   text-align: center;
 }
 
+.shadowed:hover {
+  box-shadow: 0px 0px 2px 2px rgba(197, 187, 255, 0.5);
+}
+
 body {
-  box-sizing: border-box;
   font-family: "Lato", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .logo {
@@ -426,27 +439,30 @@ body {
 .logo .nav {
   float: right;
   font-size: 0;
-  margin-top: 30px;
+  margin-top: 32px;
 }
 .logo .nav .ref {
+  display: inline-block;
+  padding: 0 15px;
+  vertical-align: top;
+  text-align: center;
+  font-size: 14px;
+  line-height: 36px;
+  font-family: "Lato", sans-serif;
   color: #868686;
+  text-transform: uppercase;
+}
+.logo .nav .ref:hover {
+  background-color: #ffbb42;
+  color: white;
 }
 .logo .nav .menu {
   display: inline-block;
-  text-transform: uppercase;
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
-  line-height: 36px;
   vertical-align: top;
-  padding: 0 16px;
-  margin: 0 2px;
+  margin: 0 3px;
 }
-.logo .nav .ref:last-child .menu {
-  padding-right: 10px;
-}
-.logo .nav .menu:hover {
-  background-color: #ffbb42;
-  color: white;
+.logo .nav .menu:last-child {
+  margin: 0;
 }
 
 .banner {
@@ -514,7 +530,7 @@ body {
   color: #ffbb42;
 }
 .banner .form .input:focus:not(.submit) {
-  box-shadow: 0px 0px 0px 2px rgba(9, 3, 200, 0.4);
+  box-shadow: 0px 0px 0px 1px rgba(9, 3, 200, 0.4);
 }
 .banner .form .submit {
   width: 212px;

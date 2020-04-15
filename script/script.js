@@ -40,8 +40,11 @@ business = {
     }
 }
 
-
 document.addEventListener('DOMContentLoaded', function () {
     setInterval(function () { business.show(); }, 4000);
     business.constructor();
 });
+
+const fbtn = function(){
+    console.log("buttonnnnnnnnnnnnnnnnn!");
+}
